@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, Image} from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Contact extends React.Component {
@@ -21,7 +21,7 @@ class Contact extends React.Component {
 
 /** Require a document to be passed to this component. */
 Contact.propTypes = {
-  stuff: PropTypes.object.isRequired,
+  contact: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

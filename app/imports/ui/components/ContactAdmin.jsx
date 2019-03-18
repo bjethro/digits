@@ -24,7 +24,7 @@ class ContactAdmin extends React.Component {
 
 /** Require a document to be passed to this component. */
 ContactAdmin.propTypes = {
-  stuff: PropTypes.object.isRequired,
+  contact: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */
