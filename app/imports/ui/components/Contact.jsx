@@ -24,7 +24,10 @@ class Contact extends React.Component {
   }
 
   onClick() {
-    Contacts.remove(this.props.contact._id, this.deleteCallback);
+    if (confirm('Are you do you want to delete this contact?')) {
+      Contacts.remove(this.props.contact._id, this.deleteCallback);
+    }
+
   }
 
   render() {
